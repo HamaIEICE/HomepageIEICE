@@ -28,8 +28,6 @@
   margin: auto;
 }
 
-
-
 /* Bootstrapのガター幅を調整するための汎用CSS */
 .row-0{ margin-left:0px;  margin-right:0px}
 .row-0 >div{ padding-right:0px;  padding-left:0px}

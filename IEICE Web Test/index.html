@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>IEICE Tokyo branch students' page</title>
-
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/hover.css">
@@ -20,18 +19,6 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
   <header>
     <!-- ナビゲーションバー -->
     <div class="navbar navbar-default navbar-fixed-top">
@@ -69,17 +56,16 @@
             </li>
             <li><a href="http://www.ieice.org/tokyo/gakusei/index_l.html" class="hvr-underline-reveal" target="_blank">参加したい方へ  <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
           </ul>
-
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">IEICE Student Page</a></li>
           </ul>
         </div>
+
       </div>
     </div>
   </header>
 
   <!-- 本文 -->
-
   <div class="container">
     <!-- 任意のID指定　クラスとデータ属性の指定　data-intervalで書き換え時間の変更可 -->
     <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -241,23 +227,28 @@
                 </div>
               </li>
             </ul>
-
           </div>
         </div>
 
-
       </div>
-
     </div>
   </div>
 
   <footer class="footer">
     <div class="container">
-      <address class="text-muted">
-        〒105-0011 東京都港区芝公園3-5-8 機械振興会館内<br> 電子情報通信学会 東京支部 事務局<br> TEL: 03-3433-6691 FAX: 03-3433-6659　E-mail: shibu@tokyo.ieice.org
-      </address>
-      <!-- コピーライト -->
-      <small class="text-muted">&copy; 2010-<span id="thisYear"></span> IEICE.</small>
+      <div class="row">
+        <div class="col-xs-9 col-md-10">
+          <address class="text-muted">
+            連絡先<br>
+            〒105-0011 東京都港区芝公園3-5-8 機械振興会館内<br> 電子情報通信学会 東京支部 事務局<br> TEL: 03-3433-6691 FAX: 03-3433-6659　E-mail: shibu@tokyo.ieice.org
+          </address>
+          <small class="text-muted">&copy; 2010-<span id="thisYear"></span> IEICE.</small>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <br>
+          <img src="img/ieiceLogo.png" height="70" alt="EICロゴ">
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -266,6 +257,19 @@
     date = new Date();
     thisYear = date.getFullYear();
     document.getElementById("thisYear").innerHTML = thisYear;
+  </script>
+
+  <!-- Facebook用スクリプト -->
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
   </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
