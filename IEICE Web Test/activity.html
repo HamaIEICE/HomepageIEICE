@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>学生会活動内容</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+  <header>
+    <!-- ナビゲーションバー -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- 画面幅が短い時に表示される開閉ボタン -->
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- ロゴ -->
+          <a href="index.html" class="navbar-brand">IEICE 東京支部 学生会</a>
+        </div>
+        <!-- メニュー -->
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle hvr-underline-reveal link-menu" data-toggle="dropdown" role="button" aria-expanded="false">学生会について <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">趣旨・沿革</a></li>
+                <li><a href="#">参加者名簿</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle hvr-underline-reveal link-menu" data-toggle="dropdown" role="button" aria-expanded="false">学生会活動内容 <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="hvr-fade">見学会</a></li>
+                <li><a href="#" class="hvr-fade">講演会</a></li>
+                <li><a href="#" class="hvr-fade">研究発表会</a></li>
+                <li><a href="#" class="hvr-fade">学生会報</a></li>
+                <li><a href="#" class="hvr-fade">SCI</a></li>
+                <li><a href="#" class="hvr-fade">幹事団</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.ieice.org/tokyo/gakusei/index_l.html" class="hvr-underline-reveal" target="_blank">参加したい方へ  <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">IEICE Student Page</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="index.html">IEICE東京支部学生会</a></li>
+        <li class="active">学生会活動内容</li>
+      </ol>
+      <div class="col-sm-12">
+        <h1>学生会活動内容</h1>
+        <p class="lead">電子情報通信学会東京支部学生会テンプレページ</p>
+        <p><a href="kengakukai.html">見学会</a></p>
+        <p><a href="#">準備中</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9 col-md-10">
+          <address class="text-muted">
+            連絡先<br>
+            〒105-0011 東京都港区芝公園3-5-8 機械振興会館内<br> 電子情報通信学会 東京支部 事務局<br> TEL: 03-3433-6691 FAX: 03-3433-6659　E-mail: shibu@tokyo.ieice.org
+          </address>
+          <small class="text-muted">&copy; 2010-<span id="thisYear"></span> IEICE.</small>
+        </div>
+        <div class="col-xs-3 col-md-2">
+          <br>
+          <a href="http://www.ieice.org/jpn/index.html" target="_blank">
+            <img src="img/ieiceLogo.png" height="70" alt="EICロゴ">
+          </a>
+          <div class="text-muted text-nowrap">電子情報通信学会</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- コピーライト用に現在の年号を取得 -->
+  <script type="text/javascript">
+    date = new Date();
+    thisYear = date.getFullYear();
+    document.getElementById("thisYear").innerHTML = thisYear;
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript">
+    $('.bs-component [data-toggle="popover"]').popover();
+    $('.bs-component [data-toggle="tooltip"]').tooltip();
+  </script>
+</body>
+
+</html>
